@@ -25,7 +25,7 @@ const {
 
 const itemOutputDir = item => {
   const outputDir = path.normalize(output);
-  return outputOnly ? outputDir : path.join(
+  return outputOnly ? outputDir + '/' + item.id : path.join(
     outputDir,
     cleanOutputPath(item.artists[0]),
     cleanOutputPath(item.album_name),
