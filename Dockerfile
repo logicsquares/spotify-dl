@@ -4,7 +4,7 @@ RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add
 
 RUN apt update && \
     apt install -y  \
-    ffmpeg && \
+    ffmpeg git && \
     rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/logicsquares/spotify-dl.git
