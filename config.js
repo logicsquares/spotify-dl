@@ -3,7 +3,7 @@ export default {
     quality: 'highestaudio',
   },
   flags: {
-    cacheFile: '.spdlcache',
+    cacheFile: '',
     cookieFile: 'cookies.txt',
     downloadReport: true,
     output: process.cwd(),
